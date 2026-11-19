@@ -1,3 +1,5 @@
+// Sets the initial state of the circuit
+
 #define BLUE 2
 #define GREEN 5
 #define RED 4
@@ -13,6 +15,8 @@ void setup() {
 
 void loop() {
 
+//create the variables and set them
+
   int redValue;
   int greenValue;
   int blueValue;
@@ -23,7 +27,8 @@ void loop() {
   greenValue = 0;
   blueValue = 0;
  
-  
+//Loops through the colors 
+
   for (int i=0; i<255; i+=1) {
     redValue -= 1;
     greenValue += 1;
